@@ -1,0 +1,274 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover premium luxury cars at Apex Motors. Explore our exclusive collection and book a test drive.">
+    <title>APEX MOTORS | Premium Car Showroom</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+    <a href="#" class="logo">APEX<span>.</span></a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+        ☰
+    </button>
+
+    <nav class="navbar" id="navbar">
+        <a href="#home">Home</a>
+        <a href="#cars">Our Cars</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+        <a href="#booking" class="nav-btn">Book a Test Drive</a>
+    </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+    <div class="hero-content">
+        <p class="subtitle">WELCOME TO APEX MOTORS</p>
+        <h1>DRIVE YOUR <span>DREAM.</span></h1>
+        <p class="hero-description">
+            Discover extraordinary automobiles.
+            Experience luxury, performance and innovation
+            like never before.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#cars" class="primary-btn">Explore Collection</a>
+            <a href="#about" class="secondary-btn">Discover More</a>
+        </div>
+
+        <div class="hero-stats">
+            <div><h2>50+</h2><p>Luxury Cars</p></div>
+            <div><h2>15+</h2><p>Car Brands</p></div>
+            <div><h2>10K+</h2><p>Happy Clients</p></div>
+        </div>
+    </div>
+
+    <div class="hero-image"></div>
+</section>
+
+<!-- BRANDS -->
+<section class="brands">
+    <p>EXPLORE TOP AUTOMOTIVE BRANDS</p>
+    <div class="brand-list">
+        <span>BMW</span>
+        <span>MERCEDES</span>
+        <span>AUDI</span>
+        <span>PORSCHE</span>
+        <span>LAMBORGHINI</span>
+    </div>
+</section>
+
+<!-- CAR COLLECTION -->
+<section class="cars-section" id="cars">
+    <div class="section-heading">
+        <p class="subtitle">OUR COLLECTION</p>
+        <h2>Find Your <span>Perfect Ride</span></h2>
+        <p>Explore our handpicked collection of premium automobiles.</p>
+    </div>
+
+    <div class="car-controls">
+        <input type="text" id="searchInput" placeholder="Search your dream car...">
+
+        <select id="brandFilter">
+            <option value="all">All Brands</option>
+            <option value="BMW">BMW</option>
+            <option value="Mercedes">Mercedes</option>
+            <option value="Audi">Audi</option>
+            <option value="Porsche">Porsche</option>
+            <option value="Lamborghini">Lamborghini</option>
+        </select>
+    </div>
+
+    <div class="car-grid" id="carGrid">
+
+        <article class="car-card" data-brand="BMW" data-name="BMW M4 Competition">
+            <div class="car-image">
+                <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?w=900" alt="BMW M4">
+                <span class="car-tag">POPULAR</span>
+                <button class="wishlist" aria-label="Add BMW to wishlist">♡</button>
+            </div>
+            <div class="car-info">
+                <p class="car-brand">BMW</p>
+                <h3>BMW M4 Competition</h3>
+                <div class="car-specs"><span>Automatic</span><span>Petrol</span><span>2025</span></div>
+                <div class="car-bottom">
+                    <h3>₹1.55 Cr*</h3>
+                    <button class="details-btn" data-car="BMW M4 Competition">View Details ↗</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="car-card" data-brand="Mercedes" data-name="Mercedes AMG GT">
+            <div class="car-image">
+                <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=900" alt="Mercedes AMG">
+                <button class="wishlist" aria-label="Add Mercedes to wishlist">♡</button>
+            </div>
+            <div class="car-info">
+                <p class="car-brand">MERCEDES</p>
+                <h3>Mercedes AMG GT</h3>
+                <div class="car-specs"><span>Automatic</span><span>Petrol</span><span>2025</span></div>
+                <div class="car-bottom">
+                    <h3>₹2.71 Cr*</h3>
+                    <button class="details-btn" data-car="Mercedes AMG GT">View Details ↗</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="car-card" data-brand="Audi" data-name="Audi R8">
+            <div class="car-image">
+                <img src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?w=900" alt="Audi R8">
+                <span class="car-tag">FEATURED</span>
+                <button class="wishlist" aria-label="Add Audi to wishlist">♡</button>
+            </div>
+            <div class="car-info">
+                <p class="car-brand">AUDI</p>
+                <h3>Audi R8</h3>
+                <div class="car-specs"><span>Automatic</span><span>Petrol</span><span>2024</span></div>
+                <div class="car-bottom">
+                    <h3>₹2.30 Cr*</h3>
+                    <button class="details-btn" data-car="Audi R8">View Details ↗</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="car-card" data-brand="Porsche" data-name="Porsche 911">
+            <div class="car-image">
+                <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=900" alt="Porsche 911">
+                <button class="wishlist" aria-label="Add Porsche to wishlist">♡</button>
+            </div>
+            <div class="car-info">
+                <p class="car-brand">PORSCHE</p>
+                <h3>Porsche 911 Carrera</h3>
+                <div class="car-specs"><span>Automatic</span><span>Petrol</span><span>2025</span></div>
+                <div class="car-bottom">
+                    <h3>₹2.00 Cr*</h3>
+                    <button class="details-btn" data-car="Porsche 911 Carrera">View Details ↗</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="car-card" data-brand="Lamborghini" data-name="Lamborghini Huracan">
+            <div class="car-image">
+                <img src="https://images.unsplash.com/photo-1511018313062-6e4c7f4b6d58?w=900" alt="Lamborghini">
+                <button class="wishlist" aria-label="Add Lamborghini to wishlist">♡</button>
+            </div>
+            <div class="car-info">
+                <p class="car-brand">LAMBORGHINI</p>
+                <h3>Lamborghini Huracan</h3>
+                <div class="car-specs"><span>Automatic</span><span>Petrol</span><span>2024</span></div>
+                <div class="car-bottom">
+                    <h3>₹3.50 Cr*</h3>
+                    <button class="details-btn" data-car="Lamborghini Huracan">View Details ↗</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="car-card" data-brand="BMW" data-name="BMW X7">
+            <div class="car-image">
+                <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=900" alt="BMW X7">
+                <button class="wishlist" aria-label="Add BMW X7 to wishlist">♡</button>
+            </div>
+            <div class="car-info">
+                <p class="car-brand">BMW</p>
+                <h3>BMW X7</h3>
+                <div class="car-specs"><span>Automatic</span><span>Diesel</span><span>2025</span></div>
+                <div class="car-bottom">
+                    <h3>₹1.25 Cr*</h3>
+                    <button class="details-btn" data-car="BMW X7">View Details ↗</button>
+                </div>
+            </div>
+        </article>
+
+    </div>
+    <p class="price-note">*Prices are illustrative and subject to confirmation.</p>
+</section>
+
+<!-- ABOUT -->
+<section class="about-section" id="about">
+    <div class="about-image"></div>
+    <div class="about-content">
+        <p class="subtitle">ABOUT APEX MOTORS</p>
+        <h2>More Than Just A <span>Showroom.</span></h2>
+        <p>
+            At Apex Motors, we believe every journey deserves
+            something extraordinary. We bring together the world's
+            finest automobiles and deliver a premium buying experience.
+        </p>
+        <ul>
+            <li>✓ Exclusive luxury car collection</li>
+            <li>✓ Expert automotive consultants</li>
+            <li>✓ Transparent buying experience</li>
+            <li>✓ Premium after-sales support</li>
+        </ul>
+        <a href="#contact" class="primary-btn">Contact Our Team</a>
+    </div>
+</section>
+
+<!-- BOOKING -->
+<section class="booking-section" id="booking">
+    <div class="section-heading">
+        <p class="subtitle">EXPERIENCE THE DRIVE</p>
+        <h2>Book Your <span>Test Drive</span></h2>
+        <p>Get behind the wheel of your favourite luxury car.</p>
+    </div>
+
+    <form class="booking-form" id="bookingForm">
+        <input type="text" id="customerName" placeholder="Your Full Name" required>
+        <input type="email" id="customerEmail" placeholder="Email Address" required>
+        <input type="tel" id="customerPhone" placeholder="Phone Number" required>
+        <select id="selectedCar" required>
+            <option value="">Select Your Car</option>
+            <option>BMW M4 Competition</option>
+            <option>Mercedes AMG GT</option>
+            <option>Audi R8</option>
+            <option>Porsche 911 Carrera</option>
+            <option>Lamborghini Huracan</option>
+            <option>BMW X7</option>
+        </select>
+        <input type="date" id="bookingDate" required>
+        <button type="submit" class="primary-btn">Confirm Booking →</button>
+        <p id="bookingMessage" role="status"></p>
+    </form>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+    <div>
+        <p class="subtitle">GET IN TOUCH</p>
+        <h2>Let's Find Your <span>Dream Car.</span></h2>
+        <p>Our team is ready to help you find your perfect automobile.</p>
+    </div>
+    <div class="contact-info">
+        <p>📍 Vijayawada, Andhra Pradesh, India</p>
+        <p>📞 +91 98765 43210</p>
+        <p>✉️ info@apexmotors.example</p>
+    </div>
+</section>
+
+<footer>
+    <a href="#" class="logo">APEX<span>.</span></a>
+    <p>© 2026 Apex Motors. All rights reserved.</p>
+    <a href="#home">Back to Top ↑</a>
+</footer>
+
+<!-- CAR DETAILS POPUP -->
+<div class="modal" id="carModal" aria-hidden="true">
+    <div class="modal-content">
+        <button class="modal-close" id="closeModal" aria-label="Close dialog">×</button>
+        <p class="subtitle">APEX MOTORS COLLECTION</p>
+        <h2 id="modalCarName">Car Details</h2>
+        <p>Discover luxury, performance and comfort with this exclusive vehicle.</p>
+        <a href="#booking" class="primary-btn" id="modalBooking">Book a Test Drive</a>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
